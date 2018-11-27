@@ -37,19 +37,14 @@
         </javac>
     </target>
    
-    <target name="usage1">
-        <echo message="war 3   is done  "/>
-    </target>
+    
     <target name="package" depends="build" description="Package a war file">
-                <echo message="war 2   is done  "/>
         <war destfile="webapps/ROOT.war"
              webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
             </fileset>
-            <echo message="war 1   is done  "/>
         </war>
-        <echo message="war    is done  "/>
     </target>
 
 </project>
