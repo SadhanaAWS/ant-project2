@@ -27,6 +27,9 @@
         <echo message=""/>
     </target>
 
+    <target name="usage">
+        <echo message="war 4   is done  "/>
+    </target>
     <target name="build" description="Compile main source tree java files">
         <mkdir dir="${build.dir}"/>
         <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
@@ -36,9 +39,11 @@
         </javac>
     </target>
    
-    <echo message="war 3   is done  "/>
+    <target name="usage">
+        <echo message="war 3   is done  "/>
+    </target>
     <target name="package" depends="build" description="Package a war file">
-        <echo message="war 2   is done  "/>
+                <echo message="war 2   is done  "/>
         <war destfile="webapps/ROOT.war"
              webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
