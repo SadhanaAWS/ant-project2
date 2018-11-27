@@ -42,8 +42,9 @@
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
             </fileset>
+            <echo message="war 1   is done  "/>
         </war>
-        <echo message="war    --> Packages the WAR file  ${destfile}"/>
+        <echo message="war    is done  "/>
     </target>
 
 </project>
