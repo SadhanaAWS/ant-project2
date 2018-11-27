@@ -43,6 +43,7 @@
                 <include name="**/*.*"/>
             </fileset>
         </war>
+        <echo message="war    --> Packages the WAR file  ${destfile}"/>
     </target>
 
 </project>
