@@ -35,8 +35,10 @@
             <classpath refid="master-classpath"/>
         </javac>
     </target>
-
+   
+    <echo message="war 3   is done  "/>
     <target name="package" depends="build" description="Package a war file">
+        <echo message="war 2   is done  "/>
         <war destfile="webapps/ROOT.war"
              webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
